@@ -1,13 +1,8 @@
-const recipe=document.querySelector('.meal-details-content');
+const recipe=document.getElementById('.meal-details-content');
 const btn =document.getElementById('search-btn');
 const result=document.getElementById("meal");
-const recipeCloseBtn = document.getElementById('recipe-close-btn');
-
 btn.addEventListener('click',getMeals);
 result.addEventListener('click',showRecipe);
-recipeCloseBtn.addEventListener('click', () => {
-    recipe.parentElement.classList.remove('showRecipe');
-});
 
 function getMeals(){
     let html=``
@@ -45,29 +40,9 @@ function getMeals(){
 function showRecipe(e){
     e.preventDefault();
     if(e.target.classList.contains('recipe-btn')){
-        let mealItem = e.target.closest('.meal-item');
+        let mealItem = e.target.parentElement.parentElement;
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
         .then(response => response.json())
         .then(data => mealRecipeModal(data.meals));
     }
-}
-function mealRecipeModal(meal){
-    console.log(meal);
-    meal = meal[0];
-    let html = `
-        <h2 class = "recipe-title">${meal.strMeal}</h2>
-        <p class = "recipe-category">${meal.strCategory}</p>
-        <div class = "recipe-instruct">
-            <h3>Instructions:</h3>
-            <p>${meal.strInstructions}</p>
-        </div>
-        <div class = "recipe-meal-img">
-            <img src = "${meal.strMealThumb}" alt = "">
-        </div>
-        <div class = "recipe-link">
-            <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
-        </div>
-    `;
-    recipe.innerHTML = html;
-    recipe.parentElement.classList.add('showRecipe');
 }

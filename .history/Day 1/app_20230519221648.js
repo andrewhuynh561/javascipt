@@ -6,7 +6,7 @@ const recipeCloseBtn = document.getElementById('recipe-close-btn');
 btn.addEventListener('click',getMeals);
 result.addEventListener('click',showRecipe);
 recipeCloseBtn.addEventListener('click', () => {
-    recipe.parentElement.classList.remove('showRecipe');
+    recipe.classList.remove('showRecipe');
 });
 
 function getMeals(){
@@ -69,5 +69,5 @@ function mealRecipeModal(meal){
         </div>
     `;
     recipe.innerHTML = html;
-    recipe.parentElement.classList.add('showRecipe');
+    recipe.classList.add('showRecipe');
 }

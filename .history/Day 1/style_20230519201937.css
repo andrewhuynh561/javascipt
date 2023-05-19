@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 :root{
-    --tenne-tawny: #09796b;
-    --tenne-tawny-dark: #2dfdc7;
+    --tenne-tawny: #d60819;
+    --tenne-tawny-dark: #b54507;
 }
 body{
     font-weight: 300;
@@ -221,7 +221,18 @@ body{
     -ms-border-radius: 0.3rem;
     -o-border-radius: 0.3rem;
 }
-
+.recipe-category{
+    background: #fff;
+    font-weight: 600;
+    color: var(--tenne-tawny);
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
 .recipe-instruct{
     padding: 1rem 0;
 }
