@@ -92,7 +92,7 @@ body{
     margin-top: 4rem;
 }
 #meal{
-    margin: 2.4rem 0;
+    margin: 3rem 0;
 }
 .meal-item{
     border-radius: 1rem;
@@ -266,7 +266,7 @@ body{
 
 
 /*  */
-.NotFound{
+.notFound{
     grid-template-columns: 1fr!important;
     color: var(--tenne-tawny);
     font-size: 1.8rem;

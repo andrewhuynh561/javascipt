@@ -266,7 +266,7 @@ body{
 
 
 /*  */
-.NotFound{
+.notFound{
     grid-template-columns: 1fr!important;
     color: var(--tenne-tawny);
     font-size: 1.8rem;

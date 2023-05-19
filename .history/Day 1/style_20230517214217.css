@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+  }
+:root{
+    --tenne-tawny: #d65108;
+    --tenne-tawny-dark: #b54507;
+}
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 35px 15px 35px;
+
+}

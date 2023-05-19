@@ -115,7 +115,7 @@ body{
     font-size: 1.4rem;
 }
 .recipe-btn{
-    text-decoration: none;
+    
     color: #fff;
     background: var(--tenne-tawny);
     font-weight: 500;
@@ -266,7 +266,7 @@ body{
 
 
 /*  */
-.NotFound{
+.notFound{
     grid-template-columns: 1fr!important;
     color: var(--tenne-tawny);
     font-size: 1.8rem;

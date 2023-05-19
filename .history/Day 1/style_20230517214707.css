@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+:root{
+    --tenne-tawny: #d65108;
+    --tenne-tawny-dark: #b54507;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 35px;
+    
+}
+p{
+    padding-bottom: 12pxpx;
+    font-size: 18px;
+}
+.text{
+    opacity: 0.8;
+}

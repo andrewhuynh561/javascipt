@@ -24,7 +24,8 @@ function print(){
                 
             });
         }else{
-            html+=`Sorry, we didn't find any meal!`;
+            html+=`Sorry !!!!`;
+            alert("sorry");
             result.classList.add('NotFound');
         }
         result.innerHTML=html;
